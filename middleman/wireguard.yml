@@ -10,10 +10,6 @@
   - name: Determine the running kernel release
     command: uname -r
     register: kernel_release
-
-  - name: Add the WireGuard PPA
-    apt_repository:
-      repo: 'ppa:wireguard/wireguard'
       
   - name: Install WireGuard and other requirements 
     apt:
