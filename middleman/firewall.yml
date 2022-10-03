@@ -69,7 +69,7 @@
 
 
  - name: Install iptables-persistent
-   apt: pkg=iptables-persistent state=installed update_cache=true
+   apt: pkg=iptables-persistent state=present update_cache=true
 
  - name: Set up iptables persistence
    command: netfilter-persistent save
